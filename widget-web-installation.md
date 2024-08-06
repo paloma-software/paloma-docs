@@ -72,6 +72,12 @@ And if editing the `href` is not possible, the following snippet should do the t
 >
 ```
 
+Alternatively, you can add the `palconTrigger` class to any element. Doing so will mean when that element is clicked, the widget is engaged:
+
+```html
+<div class="palconTrigger">Start Event Intake!</div>
+```
+
 ## Part 4 - Testing
 
 Refresh your site, and test it out!
