@@ -82,4 +82,4 @@ Alternatively, you can add the `palconTrigger` class to any element. Doing so wi
 
 Refresh your site, and test it out!
 
-This all could be streamlined for each platform we support - your feedback is incredibly valuable, so if you have any issues or feedback at all, don't hesitate to reach out at contact@palomaparties.com or [Book a meeting with us](https://calendly.com/bob-gv_a).
+This all could be streamlined for each platform we support - your feedback is incredibly valuable, so if you have any issues or feedback at all, don't hesitate to reach out at [contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site) or [Book a meeting with us](https://calendly.com/bob-gv_a).

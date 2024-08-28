@@ -9,8 +9,6 @@ This can be accomplished by two primary means;
 
 Click on the method below that you're looking to do:
 
-[contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site)
-
 [Widget Link Distribution steps](/widget-distribution.md)
 
 [Widget Website Integration steps](/widget-web-installation.md)
