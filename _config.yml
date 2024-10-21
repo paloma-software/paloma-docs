@@ -1,2 +1,9 @@
 title: Paloma Widget Documentation
 description: Documentation for how to use the Paloma Widget
+# remote_theme: pages-themes/slate@v0.2.0
+# theme: none
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+sass:
+  style: compressed

@@ -1,0 +1,174 @@
+@import "jekyll-theme-primer";
+
+// Custom styles
+body {
+  font-family: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  color: #ffffff;
+  line-height: 1.8;
+  padding: 40px;
+  font-size: 18px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  margin-bottom: 40px;
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #f0f0f0;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline;
+      margin-right: 20px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.875em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+
+  li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #58a6ff;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+  }
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  background-color: #2a2a2a;
+  color: #e6e6e6; // Light gray text for inline code
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre,
+.highlight {
+  background-color: #1e1e1e !important;
+  color: #e6e6e6 !important;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+
+  code,
+  .highlight {
+    background-color: transparent !important;
+    color: inherit !important;
+    padding: 0;
+  }
+}
+
+// Override specific highlight classes
+.highlight {
+  .c,
+  .c1,
+  .cm {
+    color: #6a9955 !important;
+  } // Comments
+  .k,
+  .kd,
+  .kn,
+  .kr {
+    color: #569cd6 !important;
+  } // Keywords
+  .s,
+  .s1,
+  .s2 {
+    color: #ce9178 !important;
+  } // Strings
+  .nb,
+  .nf {
+    color: #dcdcaa !important;
+  } // Built-in names and function names
+  .n,
+  .nx {
+    color: #9cdcfe !important;
+  } // Names and other identifiers
+  .o {
+    color: #d4d4d4 !important;
+  } // Operators
+  .p {
+    color: #d4d4d4 !important;
+  } // Punctuation
+}
+
+.section-divider {
+  border-top: 1px solid #333;
+  margin: 3em 0;
+}
+
+footer {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+// Add more custom styles here as needed
