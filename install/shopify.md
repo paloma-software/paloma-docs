@@ -17,7 +17,7 @@ Shopify uses liquid templates to build it's sites. A root page in the template w
 The script is now added, now you need to add a button.
 
 1. Go into the theme, and find the "Edit Code" option
-1. Find the liquid file that corresponds to the page you want to edit
+1. Find the liquid file that corresponds to the page you want to edit. For example, the `image-banner.liquid` file in the Sections folder controls how the main page's hero section is layed out.
 1. The simplest option is to just add a new button in wherever makes sense. The below code is what an example primary button might look like that will trigger the widget to open:
 
 ```
@@ -40,4 +40,30 @@ If the above simple button doesn't work, there are infinite other options. Below
 ```
 togglePaloma = () => { const iframe = document.getElementById("palcon-iframe"); if (iframe) iframe.style.display = iframe.style.display === "none" ? "block" : "none"; };
 document.getElementById('HeaderMenu-plan-your-event').addEventListener('click', function() { togglePaloma(); });
+```
+
+## Adding a new Custom Liquid Section
+
+If you're working on a contact or events related page and the current them isn't fitting, you can add a totally custom section that features a button that will trigger the widget. The sample below has a header in the current style, a descriptor, and the button.
+
+1. Click "Customize" on your current theme
+2. Navigate to the page that you want
+3. In the Header, Template, or Footer section at the left, click the "Add Section" option.
+4. In the Seach box, type "Custom Liquid" and then choose that option.
+5. Fill in your raw HTML or Liquid into the "Liquid Code" property at the right.
+
+Below is a sample:
+
+```
+<div class="isolate">
+  <div class="rich-text content-container color-scheme-1 gradient rich-text--full-width content-container--full-width" style="padding-top:40px; padding-bottom:52px">
+    <div class="rich-text__wrapper rich-text__wrapper--center page-width">
+      <div class="rich-text__blocks center"><h2 class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 1;">
+                Planning an Event?
+              </h2><div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 2;">
+                <p>We love hosting events! Click the button below to get started learning about our offers and submitting an event or private party inquiry.</p>
+              </div><div class="rich-text__buttons scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 3;"><a href="#" class="palconTrigger button button--primary">Plan your Event</a></div></div>
+    </div>
+  </div>
+</div>
 ```
