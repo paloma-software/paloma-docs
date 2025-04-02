@@ -6,7 +6,9 @@ Getting the Widget operational on your website is broken down into a few parts b
 
 ### Access to your website
 
-You'll need to know how to login to the backend of your website to make changes. You will need the basic knowledge of how your website works, and how to make changes to it
+You'll need to know how to login to the backend of your website to make changes. You will need the basic knowledge of how your website works, and how to make changes to it.
+
+Prefer to let us handle it? Let us know, we can do that. [Book a meeting with us](https://calendly.com/bob-gv_a)
 
 ### Design the changes
 
@@ -31,9 +33,10 @@ The main thing you need handy is the link to your widget. If you already have th
 
 The snippet should be added to a global section of your website so that your website pages can access it.
 
-This will look a bit different on all platforms. If you're not using Shopify you should be able to follow along with the Shopify instructions.
+This will look a bit different on all platforms, you should be able to adapt to one of the following, and can always reach out to us for help.
 
 [Shopify](/install/shopify.md)
+[Wordpress](/install/wordpress-elementor.md)
 
 ## Part 3 - Adding a Link or Button to Open the Widget
 
