@@ -1,5 +1,7 @@
 # Integrating the Paloma Widget with your Website
 
+These are the generic steps for installing the Paloma Widget on your website.
+
 Getting the Widget operational on your website is broken down into a few parts below. Before getting started, a few prerequisites.
 
 ## Prerequisites
@@ -36,6 +38,7 @@ The snippet should be added to a global section of your website so that your web
 This will look a bit different on all platforms, you should be able to adapt to one of the following, and can always reach out to us for help.
 
 [Shopify](/install/shopify.md)
+
 [Wordpress](/install/wordpress-elementor.md)
 
 ## Part 3 - Adding a Link or Button to Open the Widget

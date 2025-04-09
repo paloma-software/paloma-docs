@@ -12,7 +12,7 @@ Also note, these steps can be adapted to using vanilla Wordpress, but you'll nee
 1. On the menu at the left, find Elementor, click it's menu, and chose `Custom Code`
 1. Click the `New Code` button to add a new piece of custom code
 1. Give it name like `Paloma Widget Snippet` so you can identify it later
-1. For Location, choose `<body> - End`.
+1. For Location, choose `</body> - End`.
 1. Paste in your unique Paloma Snippet into the edit box, complete with script tags
 1. Hit `Publish`
 1. When prompted for a condition, leave it as is on the `Entire Site` option, and click `Save & Close`.

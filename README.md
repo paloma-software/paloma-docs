@@ -1,4 +1,4 @@
-# Paloma Widget Documentation
+# Paloma Widget Help Guides
 
 Welcome! This site houses some helpful information for you to install and configure your Paloma Widget.
 
