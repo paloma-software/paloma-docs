@@ -1,8 +1,8 @@
-# Integrating the Paloma Widget with your Website
+# Website Integration Guide for the Paloma Widget
 
 These are the generic steps for installing the Paloma Widget on your website.
 
-Getting the Widget operational on your website is broken down into a few parts below. Before getting started, a few prerequisites.
+Getting the Widget operational on your website is divided into a few parts below. Before getting started, a few prerequisites.
 
 ## Prerequisites
 
@@ -16,26 +16,34 @@ Prefer to let us handle it? Let us know, we can do that. [Book a meeting with us
 
 You will need to know how you would like your website to change. Some best practices to consider:
 
-- The widget should be integrated in a way / place that is a natural onramp for Event Inquiry. Ideally if you already have a section for Events or Private Parties, that is a natural place to put a button or link that will engage it. It shouldn't be too forward facing such that it is clicked on frequently by folks not interested in an event, and also should not be too hidden that it cannot be found.
+- The widget should be integrated in a page location that is a natural onramp for Event Inquiry. Ideally if you already have a section for Events or Private Parties, that is a natural place to put a button that will open the widget. It shouldn't be too forward facing such that it is clicked on frequently by folks not interested in an event, and also should not be too hidden that it cannot be found.
 
 Does any of this sound daunting? [Book a meeting with us](https://cal.com/paloma-bob), we'd be happy to walk through it with you together!
 
 ## Part 1 - Get the Snippet
 
-The main thing you need handy is the link to your widget. If you already have that, you can skip ahead.
+The main thing you need handy is the link to your widget. We may have already suppied this to you, and if so you can skip ahead.
 
-1. Login to the Paloma Vendor interface in your browser of choice: https://app.palomaparties.com/
-1. Click **Businesses** at the top.
+1. Login to the Paloma Vendor interface in your browser of choice: https://app.palomaparties.com/ using your dashboard email address (contact us if you're not sure what this is).
+1. Click **Settings** at the top.
 1. Click on the Venue or Business you're working with right now.
-1. Click on the **Widget** submenu on the left (or top if on mobile)
-1. Scroll down to the **Integration** section.
-1. Click on the **Copy Website Snippet** button, and paste the content somewhere you can retrieve it later.
+1. Click on the **Links and Installation** submenu (at the left, or on the top if on mobile)
+1. Scroll to the **Adding your Widget to your Website** section and click on **Self Installation**.
+1. Click on the **Copy** button in the **Widget Code Snippet** section, and paste the content somewhere you can retrieve it later.
 
 ## Part 2 - Installing the Snippet
 
-The snippet should be added to a global section of your website so that your website pages can access it.
+The snippet should be added to all pages you would like to present the widget can access it. This typically means adding it to a global section of your website, but if it will only be present on a single page, then it need only be installed on that page.
 
 This will look a bit different on all platforms, you should be able to adapt to one of the following, and can always reach out to us for help.
+
+### General steps
+
+1. Locate the closing body tag of the page
+2. Paste the snippet into the page, just before the closing body tag.
+3. Save the page.
+
+### Platform Specific Guides
 
 [Shopify](/install/shopify.md)
 
@@ -50,20 +58,24 @@ The final step involves editing pages on your website such that your customers c
 
 ```html
 <p>
-  Interested in hosting an event at Bob’s Pasta Shack?
-  <a href="javascript:void(0);" id="palconToggle"
-    >Start your event planning right now!</a
-  >
+  Interested in hosting an event at Aurora Manor?
+  <a href="javascript:void(0);" id="palconToggle">Plan your Event</a>
 </p>
 ```
 
-If it diesn't allow you to edit the `id`, you can following the following method:
+If the above does not work, you can try #! for the href:
+
+```html
+<a href="#!" id="palconToggle">Plan your Event</a>
+```
+
+If your web platform doesn't allow you to edit the `id`, you can use try following method:
 
 ```html
 <a
   href="javascript:void(0);"
   onclick="window.dispatchEvent(new Event('palconToggleEvent'))"
-  >Start Event Intake!</a
+  >Plan your Event</a
 >
 ```
 
@@ -73,11 +85,11 @@ And if editing the `href` is not possible, the following snippet should do the t
 <a
   href="#"
   onclick="event.preventDefault();window.dispatchEvent(new Event('palconToggleEvent'))"
-  >Start Event Intake!</a
+  >Plan your Event</a
 >
 ```
 
-Alternatively, you can add the `palconTrigger` class to any element. Doing so will mean when that element is clicked, the widget is engaged:
+Alternatively and possibly simpler, you can add the `palconTrigger` class to any element. Doing so will mean when that element is clicked, the widget is engaged:
 
 ```html
 <div class="palconTrigger">Start Event Intake!</div>

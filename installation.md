@@ -11,4 +11,4 @@ Click on the method below that you're looking to do:
 
 [Widget Link Distribution steps](/widget-distribution.md)
 
-[Widget Website Integration steps](/widget-web-installation.md)
+[Website Integration Guide](/widget-web-installation.md)
