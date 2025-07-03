@@ -18,4 +18,4 @@ Now that you have your URL you can copy it into any number of places to aid in d
 - Any other social posts you can think of!
 - Email signatures
 
-More questions? Email us at [contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site) or [Book a meeting with us](https://calendly.com/bob-gv_a).
+More questions? Email us at [contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site) or [Book a meeting with us](https://cal.com/paloma-bob).

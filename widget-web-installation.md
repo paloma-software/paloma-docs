@@ -10,7 +10,7 @@ Getting the Widget operational on your website is broken down into a few parts b
 
 You'll need to know how to login to the backend of your website to make changes. You will need the basic knowledge of how your website works, and how to make changes to it.
 
-Prefer to let us handle it? Let us know, we can do that. [Book a meeting with us](https://calendly.com/bob-gv_a)
+Prefer to let us handle it? Let us know, we can do that. [Book a meeting with us](https://cal.com/paloma-bob)
 
 ### Design the changes
 
@@ -18,7 +18,7 @@ You will need to know how you would like your website to change. Some best pract
 
 - The widget should be integrated in a way / place that is a natural onramp for Event Inquiry. Ideally if you already have a section for Events or Private Parties, that is a natural place to put a button or link that will engage it. It shouldn't be too forward facing such that it is clicked on frequently by folks not interested in an event, and also should not be too hidden that it cannot be found.
 
-Does any of this sound daunting? [Book a meeting with us](https://calendly.com/bob-gv_a), we'd be happy to walk through it with you together!
+Does any of this sound daunting? [Book a meeting with us](https://cal.com/paloma-bob), we'd be happy to walk through it with you together!
 
 ## Part 1 - Get the Snippet
 
@@ -87,4 +87,4 @@ Alternatively, you can add the `palconTrigger` class to any element. Doing so wi
 
 Refresh your site, and test it out!
 
-This all could be streamlined for each platform we support - your feedback is incredibly valuable, so if you have any issues or feedback at all, don't hesitate to reach out at [contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site) or [Book a meeting with us](https://calendly.com/bob-gv_a).
+This all could be streamlined for each platform we support - your feedback is incredibly valuable, so if you have any issues or feedback at all, don't hesitate to reach out at [contact@palomaparties.com](mailto:contact@palomaparties.com?subject=Question%20from%20Paloma%20Docs%20site) or [Book a meeting with us](https://cal.com/paloma-bob).
