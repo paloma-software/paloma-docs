@@ -2,3 +2,10 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# Bundler
+vendor/
+.bundle/
+
+# macOS
+.DS_Store
