@@ -21,21 +21,51 @@
     </head>
     <body>
         <header>
-            <h1>{{ site.title }}</h1>
-            <nav>
-                <ul>
-                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <a href="{{ '/' | relative_url }}" class="logo-link">
+                    <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Paloma" class="logo" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                        <li><a href="{{ '/installation.html' | relative_url }}">Installation</a></li>
+                        <li><a href="{{ '/guides/workflow.html' | relative_url }}">Workflow Guide</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main>{{ content }}</main>
 
         <footer>
-            <p>
-                &copy; {{ site.time | date: '%Y' }} Paloma Software. All rights
-                reserved.
-            </p>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Paloma Parties" class="footer-logo" />
+                    <div class="footer-info">
+                        <span class="footer-title">Paloma Software</span>
+                        <span class="footer-tagline">Unforgettable events, made easy.</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="{{ '/installation.html' | relative_url }}">Installation</a></li>
+                            <li><a href="{{ '/guides/workflow.html' | relative_url }}">Workflow Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://app.palomaparties.com">Dashboard</a></li>
+                            <li><a href="mailto:contact@palomaparties.com">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} Paloma Software. All rights reserved.</p>
+            </div>
         </footer>
     </body>
 </html>
