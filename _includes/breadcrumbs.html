@@ -1,0 +1,23 @@
+<!-- Breadcrumb Navigation -->
+{% unless page.url == '/' %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li>
+      <a href="{{ '/' | relative_url }}">Home</a>
+    </li>
+    {% if page.grandparent %}
+      <li>
+        <a href="{{ page.grandparent_url | relative_url }}">{{ page.grandparent }}</a>
+      </li>
+    {% endif %}
+    {% if page.parent %}
+      <li>
+        <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+      </li>
+    {% endif %}
+    <li aria-current="page">
+      <span>{{ page.title }}</span>
+    </li>
+  </ol>
+</nav>
+{% endunless %}

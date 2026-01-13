@@ -25,17 +25,41 @@
                 <a href="{{ '/' | relative_url }}" class="logo-link">
                     <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Paloma" class="logo" />
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                        <li><a href="{{ '/installation.html' | relative_url }}">Installation</a></li>
-                        <li><a href="{{ '/guides/workflow.html' | relative_url }}">Workflow Guide</a></li>
-                    </ul>
-                </nav>
+                <div class="header-right">
+                    {% include search.html %}
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                            <li><a href="{{ '/installation.html' | relative_url }}">Installation</a></li>
+                            <li><a href="{{ '/guides/workflow.html' | relative_url }}">Workflow Guide</a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </header>
 
-        <main>{{ content }}</main>
+        <div class="docs-layout">
+            {% include sidebar.html %}
+
+            <main class="docs-main">
+                {% include breadcrumbs.html %}
+
+                <article class="docs-content">
+                    {{ content }}
+                </article>
+
+                {% include prev-next.html %}
+            </main>
+
+            {% include toc.html %}
+        </div>
 
         <footer>
             <div class="footer-container">
@@ -67,5 +91,22 @@
                 <p>&copy; {{ site.time | date: '%Y' }} Paloma Software. All rights reserved.</p>
             </div>
         </footer>
+
+        <!-- Mobile sidebar toggle script -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const sidebar = document.querySelector('.docs-sidebar');
+
+            if (toggle && sidebar) {
+                toggle.addEventListener('click', function() {
+                    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                    toggle.setAttribute('aria-expanded', !isExpanded);
+                    sidebar.classList.toggle('mobile-open');
+                    document.body.classList.toggle('sidebar-open');
+                });
+            }
+        });
+        </script>
     </body>
 </html>

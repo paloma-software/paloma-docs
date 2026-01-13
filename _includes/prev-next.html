@@ -1,0 +1,36 @@
+<!-- Previous / Next Navigation -->
+{% assign pages = site.data.navigation.page_order %}
+{% assign current_index = -1 %}
+
+{% for p in pages %}
+  {% if p.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index >= 0 %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+
+  <nav class="prev-next-nav" aria-label="Page navigation">
+    {% if prev_index >= 0 %}
+      {% assign prev_page = pages[prev_index] %}
+      <a href="{{ prev_page.url | relative_url }}" class="prev-next-link prev">
+        <span class="prev-next-label">Previous</span>
+        <span class="prev-next-title">{{ prev_page.title }}</span>
+      </a>
+    {% else %}
+      <span class="prev-next-link prev disabled"></span>
+    {% endif %}
+
+    {% if next_index < pages.size %}
+      {% assign next_page = pages[next_index] %}
+      <a href="{{ next_page.url | relative_url }}" class="prev-next-link next">
+        <span class="prev-next-label">Next</span>
+        <span class="prev-next-title">{{ next_page.title }}</span>
+      </a>
+    {% else %}
+      <span class="prev-next-link next disabled"></span>
+    {% endif %}
+  </nav>
+{% endif %}
