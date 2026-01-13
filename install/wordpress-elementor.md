@@ -1,3 +1,11 @@
+---
+title: WordPress + Elementor Installation
+parent: Website Integration
+parent_url: /widget-web-installation.html
+grandparent: Installation
+grandparent_url: /installation.html
+---
+
 # Installing the Paloma Widget on a Wordpress Site with the Elementor Plugin
 
 Elementor is a powerful Wordpress plugin that can be used to help visually build your site. The following steps are specific to Elementor to enable the Paloma widget on the site. For more background and the full installation instructions, see the [Website Integration Guide for the Paloma Widget](https://paloma-software.github.io/paloma-docs/widget-web-installation.html).

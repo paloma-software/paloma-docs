@@ -1,3 +1,7 @@
+---
+title: Terms of Service
+---
+
 # Terms of Service for Paloma Parties
 
 **Effective Date:** January 9, 2025

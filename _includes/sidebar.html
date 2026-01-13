@@ -1,0 +1,65 @@
+<!-- Sidebar Navigation -->
+<aside class="docs-sidebar" aria-label="Documentation navigation">
+  <nav class="sidebar-nav">
+    {% for section in site.data.navigation.docs %}
+      {% assign section_url = section.url | default: section.children[0].url %}
+      {% assign is_section_active = false %}
+
+      {% if section.url == page.url %}
+        {% assign is_section_active = true %}
+      {% endif %}
+
+      {% if section.children %}
+        {% for child in section.children %}
+          {% if child.url == page.url %}
+            {% assign is_section_active = true %}
+          {% endif %}
+          {% if child.children %}
+            {% for grandchild in child.children %}
+              {% if grandchild.url == page.url %}
+                {% assign is_section_active = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <div class="sidebar-section{% if is_section_active %} active{% endif %}">
+        {% if section.url %}
+          <a href="{{ section.url | relative_url }}" class="sidebar-section-title{% if section.url == page.url %} current{% endif %}">
+            {% include icons/{{ section.icon | default: 'file' }}.svg %}
+            {{ section.title }}
+          </a>
+        {% else %}
+          <span class="sidebar-section-title">
+            {% include icons/{{ section.icon | default: 'file' }}.svg %}
+            {{ section.title }}
+          </span>
+        {% endif %}
+
+        {% if section.children %}
+          <ul class="sidebar-links">
+            {% for child in section.children %}
+              <li>
+                <a href="{{ child.url | relative_url }}" class="{% if child.url == page.url %}current{% endif %}">
+                  {{ child.title }}
+                </a>
+                {% if child.children %}
+                  <ul class="sidebar-sublinks">
+                    {% for grandchild in child.children %}
+                      <li>
+                        <a href="{{ grandchild.url | relative_url }}" class="{% if grandchild.url == page.url %}current{% endif %}">
+                          {{ grandchild.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </nav>
+</aside>

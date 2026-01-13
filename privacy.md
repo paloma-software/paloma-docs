@@ -1,3 +1,7 @@
+---
+title: Privacy Policy
+---
+
 # Privacy Policy for Paloma Parties
 
 **Last updated:** November 16, 2024

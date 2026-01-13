@@ -1,3 +1,9 @@
+---
+title: Website Integration
+parent: Installation
+parent_url: /installation.html
+---
+
 # Website Integration Guide for the Paloma Widget
 
 These are the generic steps for installing the Paloma Widget on your website.

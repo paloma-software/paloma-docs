@@ -1,3 +1,7 @@
+---
+title: Workflow Guide
+---
+
 # Paloma Workflow Guide: Handling Inquiries Like a Pro
 
 One of Paloma’s goals is to give teams managing event inquiries *superpowers* — by backing you up behind the scenes, surfacing insights, and helping ensure no request slips through the cracks.

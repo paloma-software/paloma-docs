@@ -1,0 +1,52 @@
+# Docs navigation structure
+# Each item has: title, url, and optionally children and icon
+
+docs:
+  - title: Home
+    url: /
+    icon: home
+
+  - title: Installation
+    url: /installation.html
+    icon: download
+    children:
+      - title: Widget Link Distribution
+        url: /widget-distribution.html
+      - title: Website Integration
+        url: /widget-web-installation.html
+        children:
+          - title: Shopify
+            url: /install/shopify.html
+          - title: WordPress + Elementor
+            url: /install/wordpress-elementor.html
+
+  - title: Guides
+    icon: book
+    children:
+      - title: Workflow Guide
+        url: /guides/workflow.html
+
+  - title: Legal
+    icon: file
+    children:
+      - title: Privacy Policy
+        url: /privacy.html
+      - title: Terms of Service
+        url: /terms.html
+
+# Linear page order for prev/next navigation
+page_order:
+  - url: /
+    title: Home
+  - url: /installation.html
+    title: Installation
+  - url: /widget-distribution.html
+    title: Widget Link Distribution
+  - url: /widget-web-installation.html
+    title: Website Integration
+  - url: /install/shopify.html
+    title: Shopify Installation
+  - url: /install/wordpress-elementor.html
+    title: WordPress Installation
+  - url: /guides/workflow.html
+    title: Workflow Guide

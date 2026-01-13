@@ -1,3 +1,7 @@
+---
+title: Installation
+---
+
 # Publishing your Paloma Widget
 
 Now that you're all set up, the next step is to get your widget out to the public and start getting some intakes.

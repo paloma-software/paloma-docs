@@ -1,3 +1,11 @@
+---
+title: Shopify Installation
+parent: Website Integration
+parent_url: /widget-web-installation.html
+grandparent: Installation
+grandparent_url: /installation.html
+---
+
 ## Installing the Paloma Widget on a Shopify Site
 
 Shopify uses liquid templates to build it's sites. A root page in the template will need to be edited to add the script, and then a custom button or link needs to be added to make it work.

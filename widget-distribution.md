@@ -1,3 +1,9 @@
+---
+title: Widget Link Distribution
+parent: Installation
+parent_url: /installation.html
+---
+
 # Widget Distribution
 
 ## Steps
