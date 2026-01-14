@@ -1,5 +1,6 @@
 ---
 title: Paloma Widget Help Guides
+permalink: /
 ---
 
 # Paloma Widget Help Guides
