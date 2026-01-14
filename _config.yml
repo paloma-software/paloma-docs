@@ -7,3 +7,20 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 sass:
   style: compressed
+
+# Preserve pagefind index during Jekyll rebuilds
+keep_files:
+  - _pagefind
+  - pagefind
+
+# Exclude from build (dev docs, etc.)
+exclude:
+  - CONTRIBUTING.md
+  - build.sh
+  - serve.sh
+  - dev/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - terms.md
+  - privacy.md

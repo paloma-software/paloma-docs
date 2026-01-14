@@ -26,13 +26,6 @@ docs:
       - title: Workflow Guide
         url: /guides/workflow.html
 
-  - title: Legal
-    icon: file
-    children:
-      - title: Privacy Policy
-        url: /privacy.html
-      - title: Terms of Service
-        url: /terms.html
 
 # Linear page order for prev/next navigation
 page_order:
