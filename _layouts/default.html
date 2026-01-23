@@ -26,7 +26,10 @@
                     <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Paloma" class="logo" />
                 </a>
                 <div class="header-right">
+                    <!-- TODO: Search not working in production - pagefind index needs to be
+                         built and deployed. Works locally with ./build.sh. Needs TLC to fix.
                     {% include search.html %}
+                    -->
                     <nav class="header-nav">
                         <ul>
                             <li><a href="{{ '/' | relative_url }}">Home</a></li>
